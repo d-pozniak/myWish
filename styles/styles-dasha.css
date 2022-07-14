@@ -48,6 +48,8 @@
 
 .block-list-item{
     position: relative;
+    border:1px solid transparent;
+    border-radius: 6px;
 }
 
 .block-list-item.brands{
@@ -58,7 +60,8 @@
 }
 
 .block-list-item.brands>img{
-    padding: 20px 0;
+    height: 160px;
+    margin: 20px 0;
 }
 
 .block-list-item.brands>.item-name{
@@ -71,11 +74,6 @@
     text-align: center;
 }
 
-.block-list-item:hover{
-    border: 1px solid #FC6A57;
-    border-radius: 6px;
-}
-
 .block-list-item>.icon-container{
     position: absolute;
     z-index: 1;
@@ -83,11 +81,46 @@
     height: 100%;
 }
 
-.block-list-item:hover .icon-container{
-    background: url("../img/star.png") no-repeat left 20px top 20px;
+@media (min-width: 1025px) {
+    .block-list-item:hover {
+        border-color: #FC6A57;
+    }
+
+    .block-list-item:hover .icon-container {
+        background: url("../img/star.png") no-repeat left 20px top 20px;
+    }
+
+    .block-list-item:hover .item-name {
+        background-color: #FC6A57;
+        color: white;
+    }
 }
 
-.block-list-item:hover .item-name{
-    background-color: #FC6A57;
-    color: white;
+
+@media only screen and
+(max-width: 1024px){
+    .block-container{
+        max-width: 540px;
+    }
+    .block-title--container{
+        margin-bottom: 27px;
+    }
+    .block-title{
+        font-size: 30px;
+    }
+    .block-list.brands{
+        flex-direction: column;
+    }
+    .block-list-item.brands{
+        flex-direction: row;
+        width: auto;
+    }
+    .block-list-item.brands>.item-name{
+        width: auto;
+        margin-left: 16px;
+    }
+    .block-list-item.brands>img{
+        height: 80px;
+        margin-bottom: 0;
+    }
 }
