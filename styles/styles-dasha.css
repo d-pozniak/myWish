@@ -121,7 +121,7 @@ footer{
     max-width: 1268px;
     margin: 0 auto;
     padding: 124px 0 40px;
-    background: url('../img/bg-ellipse-big.png') no-repeat center top, url('../img/bg-ellipse-small.png') no-repeat top right 33%;
+    background: url('../img/bg-ellipse-big.png') no-repeat center top, url('../img/bg-ellipse-small.png') no-repeat top right 31%;
     background-blend-mode: multiply;
 }
 .main-footer--container{
