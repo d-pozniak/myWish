@@ -44,12 +44,17 @@
     position: relative;
     border:1px solid transparent;
     border-radius: 6px;
+    transition: border-color 1s;
 }
 .block-list-item>.icon-container{
     position: absolute;
     z-index: 1;
     width: 100%;
     height: 100%;
+    /*transition: background 1s linear;*/
+}
+.block-list-item .item-name{
+    transition: background-color 1s;
 }
 
 /* BRANDS */
