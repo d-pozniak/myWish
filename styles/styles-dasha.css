@@ -12,12 +12,12 @@
     justify-content: center;
     margin-bottom: 39px;
 }
-.block-title{
-    text-align: center;
-    font-size: 40px;
-    font-family: "Baloo 2", cursive;
-    color:#FC6A57;
-}
+/*.block-title{*/
+/*    text-align: center;*/
+/*    font-size: 40px;*/
+/*    font-family: "Baloo 2", cursive;*/
+/*    color:#FC6A57;*/
+/*}*/
 .block-title--container:before,
 .block-title--container:after{
     content:'';
@@ -134,7 +134,7 @@ footer{
     justify-content: space-between;
     align-items: center;
     padding: 124px 0 40px;
-    background: url('../img/bg-ellipse-big.png') no-repeat center top, url('../img/bg-ellipse-small.png') no-repeat top right 31%;
+    background: url('../img/bg-ellipse-big.png') no-repeat center top, url('../img/bg-ellipse-small.png') no-repeat top right 31%, #FFF5F5;
     background-blend-mode: multiply;
 }
 .logo>a{
