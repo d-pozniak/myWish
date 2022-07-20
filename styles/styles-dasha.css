@@ -1,41 +1,42 @@
 
 /* main blocks (sections with cards) */
-.block-container{
-    max-width: 1268px;
-    margin: 0 auto;
-}
-.block-title--container, .block-title--container>div{
-    display: flex;
-    align-items:center;
-}
-.block-title--container{
-    justify-content: center;
-    margin-bottom: 39px;
-}
+
+/*.block-container{*/
+/*    max-width: 1268px;*/
+/*    margin: 0 auto;*/
+/*}*/
+/*.block-title--container, .block-title--container>div{*/
+/*    display: flex;*/
+/*    align-items:center;*/
+/*}*/
+/*.block-title--container{*/
+/*    justify-content: center;*/
+/*    margin-bottom: 39px;*/
+/*}*/
 /*.block-title{*/
 /*    text-align: center;*/
 /*    font-size: 40px;*/
 /*    font-family: "Baloo 2", cursive;*/
-/*    color:#FC6A57;*/
+/*    color:var(--primary);*/
 /*}*/
-.block-title--container:before,
-.block-title--container:after{
-    content:'';
-    background-color: #FFF5F5;
-    border-radius: 50%;
-    height: 20px;
-    width: 20px;
-}
-.block-title--container>div:before, .block-title--container>div:after{
-    content:'';
-    background-color: #FFF5F5;
-    border-radius: 50%;
-    height: 48px;
-    width: 48px;
-}
-.block-title--container *{
-    margin: 0 30px;
-}
+/*.block-title--container:before,*/
+/*.block-title--container:after{*/
+/*    content:'';*/
+/*    background-color: var(--secondary);*/
+/*    border-radius: 50%;*/
+/*    height: 20px;*/
+/*    width: 20px;*/
+/*}*/
+/*.block-title--container>div:before, .block-title--container>div:after{*/
+/*    content:'';*/
+/*    background-color: var(--secondary);*/
+/*    border-radius: 50%;*/
+/*    height: 48px;*/
+/*    width: 48px;*/
+/*}*/
+/*.block-title--container *{*/
+/*    margin: 0 30px;*/
+/*}*/
 .block-list{
     display: flex;
     justify-content: space-around;
@@ -72,22 +73,23 @@
     font-family: "Nunito", sans-serif;
     font-size: 20px;
     line-height: 28px;
-    color: #FC6A57;
+    color: var(--primary);
     padding: 20px 0;
     width: 100%;
     text-align: center;
 }
 @media (min-width: 1025px) {
     .block-list-item:hover {
-        border-color: #FC6A57;
+        border-color: var(--primary);
     }
-
     .block-list-item:hover .icon-container {
-        background: url("../img/star.png") no-repeat left 20px top 20px;
+        -webkit-mask: url("../img/star.png") no-repeat left 20px top 20px;
+        mask: url('../img/star.png') no-repeat left 20px top 20px;
+        mask-size: cover;
+        background-color: var(--primary);
     }
-
     .block-list-item:hover .item-name {
-        background-color: #FC6A57;
+        background-color: var(--primary);
         color: white;
     }
 }
@@ -131,7 +133,7 @@
 /*        position: absolute;*/
 /*        width: 100vw;*/
 /*        height: 194px;*/
-/*        background: url('../img/bg-ellipse-big.png') no-repeat center top, url('../img/bg-ellipse-small.png') no-repeat top right 37%, #FFF5F5;*/
+/*        background: url('../img/bg-ellipse-big.png') no-repeat center top, url('../img/bg-ellipse-small.png') no-repeat top right 37%, var(--secondary);*/
 /*        background-blend-mode: multiply;*/
 /*        content: '';*/
 /*        z-index: -1;*/
@@ -140,7 +142,7 @@
 /*}*/
 .footer-container{
     background-blend-mode: multiply;
-    background: url('../img/bg-ellipse-big.png') no-repeat center top, url('../img/bg-ellipse-small.png') no-repeat top right 37%, #FFF5F5;
+    background: var(--big-ellipse) no-repeat center top, var(--small-ellipse) no-repeat top right 37%, var(--secondary);
 }
 footer{
     max-width: 1268px;
@@ -155,10 +157,13 @@ footer{
 .logo>a{
     font-family: 'Baloo 2';
     font-size: 30px;
-    color: #FC6A57;
+    color: var(--primary);
 }
 .main-footer--link{
     margin-left: 42px;
+}
+.main-footer--link>svg>path{
+    fill: var(--primary);
 }
 
 /* mobile-nav */
@@ -172,10 +177,10 @@ footer{
         margin-bottom: 30px;
     }
     .footer-container{
-        background: #FFF5F5;
+        background: var(--secondary);
     }
     footer{
-        background: linear-gradient(rgba(255, 245, 245, 0) 0%,#FFF5F5 100%);
+        background: linear-gradient(rgba(255, 245, 245, 0) 0%,var(--secondary) 100%);
         width: 100%;
         position: fixed;
         bottom: 0;
