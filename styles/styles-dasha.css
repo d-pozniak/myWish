@@ -125,17 +125,22 @@
 /* FOOTERS */
 
 /* main footer */
-@media (min-width: 1025px){
-    footer:before{
-        position: absolute;
-        width: 100vw;
-        height: 194px;
-        background: url('../img/bg-ellipse-big.png') no-repeat center top, url('../img/bg-ellipse-small.png') no-repeat top right 37%, #FFF5F5;
-        background-blend-mode: multiply;
-        content: '';
-        z-index: -1;
-        left: 0;
-    }
+
+/*@media (min-width: 1025px){*/
+/*    footer:before{*/
+/*        position: absolute;*/
+/*        width: 100vw;*/
+/*        height: 194px;*/
+/*        background: url('../img/bg-ellipse-big.png') no-repeat center top, url('../img/bg-ellipse-small.png') no-repeat top right 37%, #FFF5F5;*/
+/*        background-blend-mode: multiply;*/
+/*        content: '';*/
+/*        z-index: -1;*/
+/*        left: 0;*/
+/*    }*/
+/*}*/
+.footer-container{
+    background-blend-mode: multiply;
+    background: url('../img/bg-ellipse-big.png') no-repeat center top, url('../img/bg-ellipse-small.png') no-repeat top right 37%, #FFF5F5;
 }
 footer{
     max-width: 1268px;
@@ -165,6 +170,9 @@ footer{
 @media only screen and (max-width: 1024px){
     main{
         margin-bottom: 30px;
+    }
+    .footer-container{
+        background: #FFF5F5;
     }
     footer{
         background: linear-gradient(rgba(255, 245, 245, 0) 0%,#FFF5F5 100%);
