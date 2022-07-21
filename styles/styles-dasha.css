@@ -201,4 +201,15 @@ footer{
         margin: 0 30px;
         padding: 70px 0 45px;
     }
+     
+   .svg-f{
+        display: block;
+        fill: var(--primary);
+        stroke: var(--primary);
+     }
+   .svg-blue-f{
+        display: block;
+        fill: var(--bg);
+        stroke: var(--bg);
+     }
 }
